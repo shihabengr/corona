@@ -1,0 +1,53 @@
+@media (max-width:991px){
+    .my-nav .logo-body{
+        display: none;
+    }
+    .my-nav .logo-body::after{
+        display: none;
+    }
+    .top .top-2{
+        padding-left:100px;
+     }
+    .pad{
+        padding-top: 30px;
+    }
+    .content p {
+        width: 91%;
+      }
+}
+@media only screen and (max-width: 767px) {
+    .head-video{
+        height: 80vh;
+    }
+	.welcome-text span {
+        font-size: 50px;
+    }
+    .head-text p{
+        width: 80%;
+    }
+    .content p {
+        width: 91%;
+      }
+}
+
+@media (max-width:575px){
+    .top h2{
+        font-size: 43px;
+    }
+    .top .top-2{
+        padding-left:15px;
+     }
+     .box1 {
+        width: 90%!important;
+     }
+     .box2 input {
+        padding: 7px 11px;
+     }
+     .protect-bg{
+        padding: 70px 50px;
+    }
+}
+
+@media (max-width:433px){
+  
+}

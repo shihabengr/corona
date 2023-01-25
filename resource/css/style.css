@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,600&display=swap');
+*{
+	font-size: 18px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+
+h1,h2,h3,h4,h5{
+	margin:0;
+	padding: 0;
+	color: white;
+	font-family: 'Lora', serif;
+	font-weight: 700;
+}
+p{
+	font-size: 15px;
+	margin: 0;
+}
+body{
+	font-family: 'Lora', serif;
+}
+section{
+	padding: 50px 0px;
+}
+img{
+	max-width:100%;
+}
+/* Common Css */
+/*Header Section */
+.my-navbar{
+	background: #ed242e;
+}
+.top{
+	background:linear-gradient(rgba(189, 32, 32, 0),rgba(27, 24, 119, 0.58)) ,url(img/corona02.jpg) no-repeat top center/cover;
+	width:auto;
+	height:90vh;
+	display: flex;
+	align-items: center;
+}
+.top .top-2{
+   padding-left: 220px;
+}
+.top h2{
+	font-size: 70px;
+}
+.top-btn1 a{
+	color: white !important;
+}
+.top-btn2 a{
+	color: black !important;
+}
+.top-btn2{
+	background: white;
+	padding: 6px 22px;
+}
+.top-btn1{
+	background: #ed242e;
+	padding: 6px 17px;
+	margin-right: 10px;
+}
+.top-btn1:hover{
+	background:white ;
+}
+.top-btn1:hover a{
+	color: black!important;
+}
+.top-btn3{
+	background: #05254d;
+	padding: 6px 20px;
+	color: aliceblue;
+	position: relative;
+	z-index: 1;
+}
+.top-btn3::after{
+    content: " ";
+	display: block;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 0;
+	transition: 0.5s;
+	z-index: -1;
+}
+.top-btn3:hover::after{
+	background:#ed242e ;
+	height:100%;
+}
+.my-nav li a{
+    color:white !important;
+    display:inline-block;
+    margin:0px 30px;
+    font-size: 1rem;
+	font-weight: 600;
+}
+.my-nav li>a::after{
+	content:"";
+	border-bottom:2px solid black;
+	display:block;
+	width:0%;
+	transition:0.5s;
+}
+.my-nav li:hover a::after{
+	width:100%;
+}
+.my-nav li:hover>a{
+    color:black!important;
+}
+.my-nav .logo-body{
+	color:white;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	width: 80px;
+	font-family: Berkshire Swash;
+	font-weight: 600;
+}
+.my-nav .logo-body img{
+	width: 27px;
+}
+.my-nav .logo-body::after{
+	content: "";
+	display: block;
+	width: 80px;
+	height: 80px;
+	background:#ed242e;
+	position: absolute;
+	top: 6px;
+	border-radius: 50%;
+	z-index: -1;
+}
+.my-nav li span a{
+	color:black !important;
+	
+}
+
+/* About Section*/
+#about-section{
+	background: white;
+}
+.move-top {
+		width: 90%;
+		margin: auto;
+		padding: 12px 48px 12px 48px;
+		border-radius: 54px;
+		box-shadow: 5px 5px 20px 5px #48262687;
+		position: relative;
+		top: -120px;
+		left: 0;
+		background: white;
+}
+/* Protect Section*/
+.protect-bg{
+	background: url(img/41.png) no-repeat center/cover;
+	padding: 120px 110px;
+	border-radius: 131px;
+	margin-top: 4%;
+}
+
+.protect-sub{
+	text-align: center;
+	background: white;
+	padding: 20px 30px;
+	border-radius: 86px 0px 86px 5px;
+	transition: 0.5s;
+}
+.protect-sub:hover{
+	border-radius: 0px 86px 0px 86px;
+}
+.protect-sub2{
+	text-align: center;
+	background: white;
+	padding: 20px 30px;
+}
+.protect-sub2 img{
+	transition: 0.5s;
+}
+.protect-sub2:hover img{
+   transform: scale(1.1);
+}
+.head-text p{
+	text-transform: capitalize;
+	color: black;
+	font-size: 17px;
+	font-weight: 500;
+	width: 50%;
+    margin: auto;
+}
+
+/*Slider Section */
+#slider{
+	background:url(img/1.jpg) no-repeat top center/cover;
+}
+.icon-area {
+	text-align: center;
+  }
+  .icon-area i {
+	color: #f75023;
+	font-size: 80px;
+	margin-bottom: 20px;
+  }
+  .content p {
+	color: #6f6b80;
+	width: 60%;
+	margin: auto;
+  }
+  .person {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: auto;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 5px solid #f75023;
+	margin-top: 50px;
+  }
+  .person img {
+	width: 100%;
+  }
+  .content h5 {
+	font-weight: 900;
+	margin-top: 15px;
+	font-size: 25px;
+	color: black!important;
+  }
+  .content h6 {
+	margin-top: 5px!important;
+	font-size: 20px;
+  }
+.carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators [data-bs-target] {
+	width: 60px;
+	height: 12px;
+	background-color: #f75023;
+}
+.carousel-indicators li{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: black!important;
+}
+
+.box1 .form-control{
+	padding: 11px .75rem!important;
+	border-radius: 26px!important;
+}
+.box1 .form-control:focus{
+	box-shadow: none;
+}
+.box2 input{
+	padding: 7px 25px;
+	border-radius: 30px;
+    background: #0a264a;
+	color:beige;
+}
+.footer-picture {
+	background:url(img/789.png) no-repeat top center/cover;
+	padding: 50px 0px;
+}
+.black{
+	background: black;
+	padding: 40px 0px;
+}
+.black ul li{
+	font-size: 16px!important;
+}
+.black ul li span{
+	margin-right: 20px;
+}
